@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LazyEagerLoading\EagerLoading.cs" />
+    <Compile Include="LazyEagerLoading\LazyLoading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Singleton.cs" />
-    <Compile Include="SingletonThreadSafe.cs" />
+    <Compile Include="Singleton\Singleton.cs" />
+    <Compile Include="Singleton\SingletonThreadSafe.cs" />
     <Compile Include="SOLID\OpenClosedPrinciple.cs" />
   </ItemGroup>
   <ItemGroup>

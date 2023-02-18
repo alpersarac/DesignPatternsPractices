@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
 using static System.Console;
+using DesignPatternsPractices.EasyEagerLoading;
 
 namespace DesignPatternsPractices
 {
@@ -21,13 +22,13 @@ namespace DesignPatternsPractices
 
         private static void Second()
         {
-            Singleton singleton = Singleton.GetInstance;
+            EagerLoading singleton = EagerLoading.GetInstance;
             singleton.PrintDetails("Second Message");
         }
 
         private static void First()
         {
-            Singleton singleton = Singleton.GetInstance;
+            EagerLoading singleton = EagerLoading.GetInstance;
             singleton.PrintDetails("First Message");
         }
     }
