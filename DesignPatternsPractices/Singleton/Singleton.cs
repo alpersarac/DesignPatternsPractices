@@ -8,6 +8,7 @@ namespace DesignPatternsPractices
 {
     public class Singleton
     {
+        //It is a pattern that allows you to use only one instance during the application usage.
         private static int counter = 0;
         private static Singleton instance = null;
         public static Singleton GetInstance{

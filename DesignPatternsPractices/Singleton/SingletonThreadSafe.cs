@@ -8,6 +8,9 @@ namespace DesignPatternsPractices
 {
     public sealed class SingletonThreadSafe
     {
+        //It is a pattern that allows you to use only one instance during the application usage.
+        //Thread safe example showed below.
+        //first if (instance == null) condition is way to avoid rudandant lock usage. if the instance is not initiated no need to lock the object.
         private static int counter = 0;
         private static SingletonThreadSafe instance = null;
         private static readonly Object obj = new Object();

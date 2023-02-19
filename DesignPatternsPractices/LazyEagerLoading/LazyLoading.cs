@@ -10,7 +10,8 @@ namespace DesignPatternsPractices.LazyEagerLoading
     public class LazyLoading
     {
         //Lazy Loading is thread safe
-        //Lazy Loading vs. Eager Loading. While lazy loading delays the initialization of a resource, eager loading initializes or loads a resource as soon as the code is executed.
+        //Lazy Loading vs. Eager Loading.
+        //While lazy loading delays the initialization of a resource, eager loading initializes or loads a resource as soon as the code is executed.
         private static int counter = 0;
         private static Lazy<LazyLoading> instance = new Lazy<LazyLoading>(()=> new LazyLoading());
 
